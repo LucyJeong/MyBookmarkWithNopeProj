@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5HG-Fd-drz">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--MyBookmark-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SafariView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iX2-uW-bsi">
+                                <rect key="frame" x="235" y="285" width="130" height="30"/>
+                                <state key="normal" title="Show web browser"/>
+                                <connections>
+                                    <action selector="clickedShowWebBrowserButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="QCy-I3-dpN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvt-gG-vDP">
+                                <rect key="frame" x="220" y="230" width="160" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="Wo9-9A-U9t"/>
+                                    <constraint firstAttribute="height" constant="140" id="jGz-Q0-Ehm"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="brunch3"/>
+                                <connections>
+                                    <segue destination="gju-dh-UmF" kind="show" identifier="ShowBrunch" id="3dS-aS-QXJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8AQ-wB-ZwT">
+                                <rect key="frame" x="220" y="90" width="160" height="140"/>
+                                <state key="normal" title="Button" image="lucy2_medium"/>
+                                <connections>
+                                    <segue destination="gju-dh-UmF" kind="show" identifier="ShowMedium" id="T4Y-wX-zur"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlY-86-HpH">
+                                <rect key="frame" x="220" y="370" width="160" height="140"/>
+                                <state key="normal" title="Button" image="wearedigitalnomads"/>
+                                <connections>
+                                    <segue destination="gju-dh-UmF" kind="show" identifier="ShowWAD" id="R7G-dL-Ys2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wlY-86-HpH" firstAttribute="top" secondItem="qvt-gG-vDP" secondAttribute="bottom" id="0bt-OA-CIw"/>
+                            <constraint firstItem="qvt-gG-vDP" firstAttribute="top" secondItem="8AQ-wB-ZwT" secondAttribute="bottom" id="0gY-K5-QOu"/>
+                            <constraint firstItem="8AQ-wB-ZwT" firstAttribute="height" secondItem="qvt-gG-vDP" secondAttribute="height" id="9Uk-26-1Bo"/>
+                            <constraint firstItem="qvt-gG-vDP" firstAttribute="leading" secondItem="wlY-86-HpH" secondAttribute="trailing" constant="20" id="IRp-xZ-x3P"/>
+                            <constraint firstItem="qvt-gG-vDP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YH1-da-eO9"/>
+                            <constraint firstItem="8AQ-wB-ZwT" firstAttribute="leading" secondItem="qvt-gG-vDP" secondAttribute="trailing" constant="20" id="eUz-dv-lpd"/>
+                            <constraint firstItem="iX2-uW-bsi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eq1-ad-vnw"/>
+                            <constraint firstItem="8AQ-wB-ZwT" firstAttribute="width" secondItem="qvt-gG-vDP" secondAttribute="width" id="eup-hG-N3S"/>
+                            <constraint firstItem="wlY-86-HpH" firstAttribute="width" secondItem="qvt-gG-vDP" secondAttribute="width" id="fRM-06-YzN"/>
+                            <constraint firstItem="qvt-gG-vDP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lM9-S3-Jl0"/>
+                            <constraint firstItem="wlY-86-HpH" firstAttribute="height" secondItem="qvt-gG-vDP" secondAttribute="height" id="mMz-ca-N1f"/>
+                            <constraint firstItem="8AQ-wB-ZwT" firstAttribute="centerY" secondItem="qvt-gG-vDP" secondAttribute="centerY" id="pkS-zE-QhM"/>
+                            <constraint firstItem="iX2-uW-bsi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pm6-Sj-Jb0"/>
+                            <constraint firstItem="wlY-86-HpH" firstAttribute="centerY" secondItem="qvt-gG-vDP" secondAttribute="centerY" id="sTk-4L-FgA"/>
+                            <constraint firstItem="wlY-86-HpH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wxE-zR-xHF"/>
+                            <constraint firstItem="8AQ-wB-ZwT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y6O-5g-kHy"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="eUz-dv-lpd"/>
+                                <exclude reference="pkS-zE-QhM"/>
+                                <exclude reference="IRp-xZ-x3P"/>
+                                <exclude reference="sTk-4L-FgA"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="MyBookmark" id="Tjr-ND-vXO"/>
+                    <connections>
+                        <segue destination="gju-dh-UmF" kind="show" identifier="ShowWebView" id="Fm0-sh-S2U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1305" y="-377"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="31d-RI-z1F">
+            <objects>
+                <viewController id="gju-dh-UmF" customClass="WebViewController" customModule="SafariView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9XQ-Xh-5fY"/>
+                        <viewControllerLayoutGuide type="bottom" id="cWr-gs-yWf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="doJ-gV-8M0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yfb-Gg-VFo">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem title="Item" systemItem="add" id="EYK-WI-Hdw"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="B7i-SQ-fB5"/>
+                                    <barButtonItem systemItem="refresh" id="nDB-ls-OYI">
+                                        <connections>
+                                            <action selector="clickRefreshButton:" destination="gju-dh-UmF" id="yWn-q3-8pS"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="0Dp-kf-mS1"/>
+                                    <barButtonItem systemItem="bookmarks" id="UdZ-DG-2Ab"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="OZj-uK-a6M"/>
+                                    <barButtonItem title="&lt;" id="xpG-vv-XOF">
+                                        <connections>
+                                            <action selector="clickBackButton:" destination="gju-dh-UmF" id="Blu-Be-WrR"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="O6h-Vc-o2Y"/>
+                                    <barButtonItem title="&gt;" id="vqF-zH-2v0">
+                                        <connections>
+                                            <action selector="clickForwardButton:" destination="gju-dh-UmF" id="00P-zq-RjC"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j3K-2y-l9P">
+                                <rect key="frame" x="0.0" y="64" width="600" height="492"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="gju-dh-UmF" id="vLe-Hb-LcB"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yfb-Gg-VFo" firstAttribute="bottom" secondItem="cWr-gs-yWf" secondAttribute="top" id="9os-0c-gYX"/>
+                            <constraint firstItem="yfb-Gg-VFo" firstAttribute="leading" secondItem="doJ-gV-8M0" secondAttribute="leading" id="Dvz-2t-bH6"/>
+                            <constraint firstItem="j3K-2y-l9P" firstAttribute="leading" secondItem="yfb-Gg-VFo" secondAttribute="leading" id="RWk-1M-Qg5"/>
+                            <constraint firstItem="j3K-2y-l9P" firstAttribute="top" secondItem="9XQ-Xh-5fY" secondAttribute="bottom" id="Rk3-3F-j2v"/>
+                            <constraint firstItem="yfb-Gg-VFo" firstAttribute="top" secondItem="j3K-2y-l9P" secondAttribute="bottom" id="jJr-DP-JNt"/>
+                            <constraint firstItem="j3K-2y-l9P" firstAttribute="trailing" secondItem="yfb-Gg-VFo" secondAttribute="trailing" id="mWE-Qm-gXa"/>
+                            <constraint firstAttribute="trailing" secondItem="yfb-Gg-VFo" secondAttribute="trailing" id="yAD-dM-v4R"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="11u-Bc-ERK">
+                        <nil key="title"/>
+                        <textField key="titleView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="url을 입력해주세요" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" id="TJr-pr-nQQ">
+                            <rect key="frame" x="180" y="7" width="240" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="URL"/>
+                            <connections>
+                                <outlet property="delegate" destination="gju-dh-UmF" id="LUm-TI-Bct"/>
+                            </connections>
+                        </textField>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="urlField" destination="TJr-pr-nQQ" id="mdE-Qs-GTn"/>
+                        <outlet property="webView" destination="j3K-2y-l9P" id="Fsy-Ln-9dq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Whq-gV-H51" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2017" y="-377"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5d7-Sa-bYa">
+            <objects>
+                <viewController id="rRZ-q0-M4b" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vdi-G5-hbi"/>
+                        <viewControllerLayoutGuide type="bottom" id="g7Y-GQ-s11"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qmc-sm-DM5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5yd-Or-zTn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2004" y="279"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ftW-eb-fTh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5HG-Fd-drz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="txf-Tm-qdJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.85882352941176465" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="rIQ-0T-8PX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CHD-mt-GlV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="583" y="-377"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="brunch3" width="422" height="422"/>
+        <image name="lucy2_medium" width="422" height="422"/>
+        <image name="wearedigitalnomads" width="422" height="422"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="R7G-dL-Ys2"/>
+    </inferredMetricsTieBreakers>
+</document>
